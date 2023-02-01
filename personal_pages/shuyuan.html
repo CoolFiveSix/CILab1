@@ -1,0 +1,127 @@
+<!doctype html>
+<head>
+    <link rel="stylesheet" href="../index.css" type="text/css" />
+    <link rel="stylesheet" href="model.css" type="text/css" />
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <script src="../static/js/jquery3.4.1.min.js"></script>
+    <script src="../static/js/toastr.min.js"></script>
+    <script src="../static/js/clipboard.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <title>Shuyuan LI(李书缘)</title>
+</head>
+
+<body>
+    <div id="layout-content">
+        <h1>Shuyuan LI(李书缘)</h1>
+        <table class="imgtable">
+            <tr>
+                <td>
+                    <img src="../static/images/people/shuyuanli.png" alt="avatar" width="130px"
+                            height="130px" /></a>&nbsp;</td>
+                <td align="left">
+                    <p>Ph.D. Student,<br />
+                        <a href="http://yongxintong.group">Big Data Analysis Group</a>, <br />
+                        <a href="https://www.buaa.edu.cn/info/1602/1472.htm">State Key Laboratory of Software
+                            Development Environment</a>, <br />
+                        <a href="https://scse.buaa.edu.cn">School of Computer Science and Enigneering</a>, <br />
+                        <a href="https://www.buaa.edu.cn">Beihang University (BUAA)</a><br />
+                        Haidian, Beijing, China <br /> </p>
+                </td>
+            </tr>
+        </table>
+
+        <div class="cil-sub-header-bio">
+            <div class="cil-sub-logo">Publications</div>
+        </div>  
+        <ol>
+            <li>
+            [<b>MDM 2021</b>]
+                Qian Tao, Yongxin Tong, Shuyuan Li, Yuxiang Zeng, Zimu Zhou, Ke Xu.
+                <a href="http://mdmconferences.org/mdm2021/" target="_blank"> "A Differentially Private Task Planning Framework for Spatial Crowdsourcing"</a>,
+                <i> Proceedings of 22nd IEEE International Conference on Mobile Data Management</i>, Toronto, Canada, June 15-18, 2021.<span class="ccf-A"> (<b>CCF C类</b>)
+                <a class="btn btn-download-pdf btn-download" href="../static/paper/2021/MDM21_A Differentially Private Task Planning Framework for Spatial Crowdsourcing.pdf" target="_blank"><span class="icon-pdf icon"></span>PDF</a>
+                <button type="button" class="btn btn-download btn-download-bibtex" data-toggle="modal" data-target="#bibtexModel" data-content="
+
+@inproceedings{DBLP:conf/mdm/TaoTLZZ021,
+author    = {Qian Tao and
+Yongxin Tong and
+Shuyuan Li and
+Yuxiang Zeng and
+Zimu Zhou and
+Ke Xu},
+title     = {A Differentially Private Task Planning Framework for Spatial Crowdsourcing},
+booktitle = {22nd {IEEE} International Conference on Mobile Data Management, {MDM}
+2021, Toronto, ON, Canada, June 15-18, 2021},
+pages     = {9--18},
+publisher = {{IEEE}},
+year      = {2021},
+url       = {https://doi.org/10.1109/MDM52706.2021.00015},
+doi       = {10.1109/MDM52706.2021.00015},
+timestamp = {Tue, 13 Jul 2021 15:29:50 +0200},
+biburl    = {https://dblp.org/rec/conf/mdm/TaoTLZZ021.bib},
+bibsource = {dblp computer science bibliography, https://dblp.org}
+}">
+                    <span class="icon-bibtex icon"></span>BibTex
+                </button>
+            </li>
+        </ol>
+        
+        <div class="cil-sub-header-bio">
+            <div class="cil-sub-logo">Honors</div>
+        </div>  
+        <ol>
+            <li>
+                <p>Gold Medal of ACM-CCPC Girls' Match</p>
+            </li>
+            <li>
+                <p>National Scholarship</p>
+            </li>
+            
+        </ol>
+        <!-- <div class="cil-sub-header-bio">
+            <div class="cil-sub-logo">Intern Experience</div>
+        </div> 
+        <ol>
+            <li>
+                <p>Research Intern, Intelligent Computing Laboratory of Alibaba Dharma Academy</p>
+            </li>
+        </ol> -->
+    </div>
+    <br>
+    <div class="modal fade" id="bibtexModel">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <!-- 模态框主体 -->
+                <div class="modal-body">
+                    <pre id="bibtexContent"></pre>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="getBibtex()" id="copy-btn">复制</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $('#bibtexModel').on('show.bs.modal', function (event) {
+            let button = $(event.relatedTarget);
+            let bibtex = button.data('content');
+            bibtex = bibtex.trim();
+            let modalBody = document.getElementById("bibtexContent");
+            modalBody.innerHTML = bibtex;
+        });
+
+        function getBibtex() {
+            let bibtex = document.getElementById("bibtexContent").innerHTML;
+            var clipboard = new ClipboardJS('.btn', {
+                text: function() {
+                    return bibtex;
+                   }
+            });
+            setTimeout("$('#bibtexModel').modal('hide')",500);//0.5s延时自动关闭
+            toastr.success("复制成功！");
+        }
+    </script>
+</body>

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://hufudb.com/~skyxuan/sitemap.xml

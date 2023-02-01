@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=0.3, maximum-scale=1, minimum-scale=0.3">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <title>大数据分析研究组</title>
+		<link rel="shortcut icon" href="./static/images/favicon.ico">
+        <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="./static/css/font-awesome.css">
+        <link rel="stylesheet" href="./static/css/toastr.min.css">
+        <script src="./static/js/jquery3.4.1.min.js"></script>
+        <script src="./static/js/toastr.min.js"></script>
+        <script src="./static/js/clipboard.min.js"></script>
+        <script src="./static/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <header class="cil-header" id="header">
+            <div class="cil-container">
+                <a href="javascript:void(0)" onclick="navbarClick('home')"><div class="cil-logo-zh"></div></a>
+                <div class="cil-navbar-zh">
+                    <ul>
+                        <li><a href="javascript:void(0)" onclick="navbarClick('home')" id="home-link" style="opacity: 0.5; font-weight: none;">主页</a></li>
+                        <li><a href="javascript:void(0)" onclick="navbarClick('news')" id="news-link" style="opacity: 1; font-weight: none;">新闻</a></li>
+                        <li><a href="javascript:void(0)" onclick="navbarClick('honors')" id="honors-link" style="opacity: 0.5; font-weight: none;">荣誉</a></li>
+                        <li><a href="javascript:void(0)" onclick="navbarClick('team')" id="team-link" style="opacity: 0.5; font-weight: none;">成员</a></li>
+                        <li><a href="javascript:void(0)" onclick="navbarClick('teaching')" id="teaching-link" style="opacity: 0.5; font-weight: none;">教学</a></li>
+                        <li><a href="javascript:void(0)" onclick="navbarClick('pub')" id="pub-link" style="opacity: 0.5; font-weight: none;">论著</a></li>
+                        <li><a href="javascript:void(0)" onclick="navbarClick('talks')" id="talks-link" style="opacity: 0.5; font-weight: none;">报告</a></li>
+                        <li><a href="joinus-zh.html">加入我们</a></li>
+                        <li><a href="news.html" style="opacity: 0.5; font-weight: none;">English</a></li>      
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="cil-total-news anchor" id="news">
+            <div class="cil-sub-header">
+                <div class="cil-container">
+                    <div class="cil-sub-logo">新闻</div>
+                </div>
+            </div>
+            <div class="cil-container">
+                <div class="cil-news-area">
+                    <div class="cil-newslist">
+                        <!-- add News by year-month here -->
+                       <!-- <h3 id="news-2019">2019</h3> -->
+                            <ul>
+                                <!-- <li>
+                                    <span class="icon-top icon"></span>
+                                    [2022/01] 恭喜<a href="https://cie-info.org.cn/site/content/4580.html" target="_blank">童咏昕教授等荣获2021中国电子学会自然科学奖一等奖</a>。
+                                </li> -->
+                                <li>
+                                    <span class="icon-top icon"></span>
+                                    [2022/09] 研究组<a href="javascript:void(0)" onclick="navbarClick('teaching')">《算法设计与分析》MOOC课程</a>第六次开课。
+                                </li>
+                                <li>
+                                    <span class="icon-top icon"></span>
+                                    [2022/01] 研究组<a href="./static/paper/2022/PVLDB2022_Hu-Fu.pdf">数据联邦系统-虎符</a>被<b>PVLDB 2022</b>接收。
+                                </li>
+                                <li>
+                                    <span class="icon-bell icon"></span>
+                                    <!-- [2022/11] 研究组3篇论文被<b>CCF A</b>类会议<b>TKDE</b>、<b>ICDE 2023</b>接收。 -->
+                                    [2022/11] 研究组3篇论文被<b>CCF A</b>类会议<b>ICDE 2023</b>, <b>SIGMOD 2023</b>接收。
+                                </li>
+                                <li>
+                                    <span class="icon-bell icon"></span>
+                                    [2022/09] 研究组潘叙辰同学获得<b>2022国家奖学金</b>。
+                                </li>
+                                
+                                <li>
+                                    <span class="icon-bell icon"></span>
+                                    [2022/05] 研究组2篇论文被<b>CCF A</b>类会议<b>SIGKDD 2022</b>接收。
+                                </li>
+                                <li>
+                                    <span class="icon-bell icon"></span>
+                                    [2022/03] 研究组<a href="javascript:void(0)" onclick="navbarClick('teaching')">《算法设计与分析》MOOC课程</a>第五次开课。
+                                </li>
+                                <li>
+                                    <span class="icon-bell icon"></span>
+                                    [2022/01] 研究组5篇论文被<b>CCF A</b>类期刊<b>TKDE</b>和<b>CCF A</b>类会议<b>SIGMOD 2022</b>、<b>ICDE 2022</b>接收。
+                                </li>
+                                <li>
+                                    <span class="icon-bell icon"></span>
+                                    [2022/01] 研究组获批<b>NSFC联合基金重点项目"轨道交通分布式数据共享计算方法研究"</b>。
+                                </li>
+                                <li>
+                                    <span class="icon-bell icon"></span>
+                                    [2021/09] 研究组王晏晟、史鼎元、魏淑越三位同学获得<b>2021国家奖学金</b>。
+                                </li>
+                                <li>
+                                    <span class="icon-bell icon"></span>
+                                    [2021/09] 研究组<a href="javascript:void(0)" onclick="navbarClick('teaching')">《算法设计与分析》MOOC课程</a>第四次开课。
+                                </li>
+                                <li>
+                                    <span class="icon-bell icon"></span>
+                                    [2021/08] 研究组3篇论文被<b>CCF A</b>类会议<b>SIGKDD 2021</b>接收。
+                                </li>
+                                <li>
+                                    <span class="icon-bell icon"></span>
+                                    [2021/04] 研究组2篇论文被<b>CCF A</b>类会议<b>ICDE 2021</b>接收。
+                                </li>
+                                <li>
+                                    <span class="icon-bell icon"></span>
+                                    [2021/03] 研究组<a href="javascript:void(0)" onclick="navbarClick('teaching')">《算法设计与分析》MOOC课程</a>第三次开课。
+                                </li>
+                                <li>
+                                    <span class="icon-bell icon"></span>
+                                    [2020/09] 研究组<a href="javascript:void(0)" onclick="navbarClick('teaching')">《算法设计与分析》MOOC课程</a>第二次开课。
+                                </li>
+                                <li>
+                                    <span class="icon-bell icon"></span>
+                                    [2020/09] 研究组论文"<a href="https://ieeexplore.ieee.org/document/8731569/" target="_blank"></a><i>An Efficient Insertion Operator in Dynamic Ridesharing Services</i></a>"被<b>CCF A</b>类期刊<b>TKDE</b>接收。
+                                </li>
+                                <li>
+                                    <span class="icon-bell icon"></span>
+                                    [2020/09] 研究组论文"<i>The Simpler The Better: An Indexing Approach for Shared-Route Planning Queries</i>"被<b>CCF A</b>类会议<b>VLDB 2020</b>接收。
+                                </li>
+                                <li>
+                                    <span class="icon-bell icon"></span>
+                                    [2020/08] 研究组团队"<i>Polar Bear</i>"在数据挖掘国际顶级赛事<b>KDD Cup 2020, RL Track</b>比赛中获得冠军。
+                                </li>
+                                <li>
+                                    <span class="icon-bell icon"></span>
+                                    [2020/07] 研究组关于空间众包双边在线场景下任务分配的研究被<b>CCF A</b>类期刊<b>TKDE</b>接收。
+                                </li>
+                                <li>
+                                    <span class="icon-bell icon"></span>
+                                    [2020/06] 研究组论文"<i>Rethinking Pruning for Accelerating Deep Inference At the Edge</i>"被<b>CCF A</b>类会议<b>SIGKDD 2020</b>接收。
+                                </li>
+                                <li>
+                                    <span class="icon-bell icon"></span>
+                                    [2019/12] 研究组精心打造的<a href="javascript:void(0)" onclick="navbarClick('teaching')">《算法设计与分析》MOOC课程</a>第一次开课。
+                                </li>
+                                <li>
+                                    <span class="icon-bell icon"></span>
+                                    [2019/12] 研究组论文"<i>Federated LDA</i>"被<b>CCF A</b>类会议<b>AAAI 2020</b>接收。
+                                </li>
+                                <li>
+                                    <span class="icon-bell icon"></span>
+                                    [2019/11] 研究组关于空间众包差分隐私的研究被<b>CCF A</b>类会议<b>ICDE 2020</b>接收。
+                                </li>
+                                <li>
+                                    <span class="icon-bell icon"></span>
+                                    [2019/09] 研究组成功组织CCF学科前沿讲习班<a href="https://www.ccf.org.cn/c/2019-09-27/669256.shtml" target="_blank">《群体智能计算》</a>。
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>                         
+        </section>
+
+        <footer class="cil-footer">
+            <div class="cil-container">
+                <!-- <div class="cil-footer-logo">
+                    <div class="cil-lab-name">大 数 据 分 析 研 究 组</div>
+                    <div class="cil-lab-desc"><a style="color: #ffffff;text-decoration:none;" href="https://www.buaa.edu.cn/" target="_blank"><b>北 京 航 空 航 天 大 学</b></a></div>
+                    <div class="cil-lab-desc"><a style="color: #ffffff;text-decoration:none;" href="http://www.nlsde.buaa.edu.cn/" target="_blank">软 件 开 发 环 境 国 家 重 点 实 验 室</a></div>
+                </div> -->
+                <a hidden="hidden" href='https://clustrmaps.com/site/1b42t' title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=200&t=n&d=77QmN9OdN8HDW2ctjd9a-UUqVFkZN8n58xqdlt-P-ow'/></a>
+                <div class="cil-lab-copyright">
+                    <a href="http://www.beian.miit.gov.cn" target="_blank">京ICP备19046737号-1<br/></a>
+                    地址: 北京市海淀区学院路37号 邮编：100191<br/>
+                    Copyright &copy; 2019-2020 大数据分析研究组. 版权所有.
+                </div>
+            </div>
+        </footer>
+
+        <script type="text/javascript"> 
+            function navbarClick(navbar) {
+                if(navbar == "home" || navbar == "news" || navbar == "honors" || navbar == "team" || navbar == "pub" || navbar == "talks" || navbar == "teaching") {
+                    // window.open("index-zh.html?name="+navbar)
+                	window.location.href="index-zh.html?name="+navbar
+                }
+            }
+            $(function(){
+                function footerPosition(){
+                    $("footer").removeClass("fixed-bottom");
+                    var contentHeight = document.body.scrollHeight,
+                        winHeight = window.innerHeight;
+                    if(!(contentHeight > winHeight)){
+                        $("footer").addClass("fixed-bottom");
+                    } else {
+                        $("footer").removeClass("fixed-bottom");
+                    }
+                }
+                footerPosition();
+                $(window).resize(footerPosition);
+            });
+        </script>
+    </body>
+</html>
